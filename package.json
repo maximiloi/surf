@@ -1,5 +1,5 @@
 {
-  "name": "Surf",
+  "name": "surf",
   "version": "1.0.0",
   "description": "школа серфинга",
   "devDependencies": {
@@ -9,14 +9,16 @@
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-scss": "1.4.x",
     "gulp-minify": "^3.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "1.4.x",
     "gulp-svgstore": "^7.0.0",
     "gulp-webp": "^3.0.0",
+    "node-sass": "^4.11.0",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -45,6 +47,7 @@
     "node": "8.12"
   },
   "dependencies": {
+    "del": "^3.0.0",
     "normalize.css": "^8.0.0"
   },
   "repository": {
@@ -56,5 +59,6 @@
   "bugs": {
     "url": "https://github.com/maximiloi/surf/issues"
   },
-  "homepage": "https://github.com/maximiloi/surf#readme"
+  "homepage": "https://github.com/maximiloi/surf#readme",
+  "main": "gulpfile.js"
 }
