@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.css">
   <title>Long Beach Surfing Institute</title>
@@ -13,15 +17,27 @@
 <body>
 
   <header>
-    <div class="header__wrapper">
-      <div class="header__logo">A</div>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">home</li>
-          <li class="nav__item">About</li>
-          <li class="nav__item">blog</li>
-          <li class="nav__item">contact</li>
-        </ul>
+    <div class="header__wrapper container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <a class="navbar-brand header__logo" href="#">A</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
     <section class="headline">
@@ -34,7 +50,7 @@
   <main class="page__wrapper">
 
     <section class="intro">
-      <h2 class="intro__title visible-hidden">recent reviews, best video</h2>
+      <h2 class="intro__title visually-hidden">recent reviews, best video</h2>
       <article class="recent-reviews">
         <h3 class="recent-reviews__title">recent reviews</h3>
         <figure class="review">
@@ -49,7 +65,7 @@
       </article>
 
       <article class="best-video">
-        <h3 class="best-video__title visible-hidden">Best video</h3>
+        <h3 class="best-video__title visually-hidden">Best video</h3>
         <figure class="best-video__post">
           <img src="http://placekitten.com/620/430" alt="">
         </figure>
@@ -69,7 +85,7 @@
     <section class="popular-instractors">
       <h2 class="recent-reviews__title">popular instractors</h2>
       <article class="instractor__list">
-        <h3 class="instractor__title visible-hidden">instractors</h3>
+        <h3 class="instractor__title visually-hidden">instractors</h3>
         <figure class="instractor__item">
           <img class="instractor__img" src="http://placekitten.com/290/355" alt="">
           <p class="instractor__name">Simon Adward</p>
@@ -125,6 +141,14 @@
     <h2 class="footer__title">Beach Surfing</h2>
     <p class="copyright">Copyright © 2018 All Rights Reserved.</p>
   </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
 </body>
 
