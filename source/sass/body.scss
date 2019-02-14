@@ -1,5 +1,10 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: $bgcolorwhite;
+  max-width: 1440px;
+  font-family: $avenir-roman;
+  font-size: 16px;
+  line-height: 31px;
+  color: $textcolorgray;
 }

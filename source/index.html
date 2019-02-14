@@ -17,13 +17,15 @@
 <body>
 
   <header>
-    <div class="header__wrapper container-fluid">
-      <nav class="navbar navbar-expand-sm navbar-light bg-white">
-        <a class="navbar-brand header__logo" href="#">A</a>
+    <div class="header__wrapper">
+      <nav class="navbar navbar-expand-sm navbar-light bg-white container-fluid align-items-center justify-content-md-between">
+        <a class="navbar-brand header__logo" href="/">A</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-md-grow-0" id="collapsibleNavId">
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -40,17 +42,16 @@
         </div>
       </nav>
     </div>
-    <section class="headline">
+    <section class="headline justify-content-center">
       <h1 class="headline__title">Long Beach Surfing Institute</h1>
       <p class="headline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique non officia
-        laboriosam amet! Tenetur totam assumenda, placeat dolorum quia unde ducimus adipisci voluptas hic?</p>
+        laboriosam amet! Tenetur totam assumenda, placeat?</p>
     </section>
   </header>
 
   <main class="page__wrapper">
 
-    <section class="intro">
-      <h2 class="intro__title visually-hidden">recent reviews, best video</h2>
+    <div class="intro">
       <article class="recent-reviews">
         <h3 class="recent-reviews__title">recent reviews</h3>
         <figure class="review">
@@ -80,10 +81,10 @@
           <img src="http://placekitten.com/280/155" alt="">
         </figure>
       </article>
-    </section>
+    </div>
 
     <section class="popular-instractors">
-      <h2 class="recent-reviews__title">popular instractors</h2>
+      <h2 class="popular-instractors__title">popular instractors</h2>
       <article class="instractor__list">
         <h3 class="instractor__title visually-hidden">instractors</h3>
         <figure class="instractor__item">

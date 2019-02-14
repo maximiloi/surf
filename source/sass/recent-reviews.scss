@@ -1,0 +1,12 @@
+.recent-reviews {
+  margin-bottom: 230px;
+
+  &__title {
+    margin-bottom: 50px;
+    color: $textcolorblack;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $playfair-regular;
+    font-size: 36px;
+  }
+}

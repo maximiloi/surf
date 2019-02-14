@@ -1,0 +1,38 @@
+.header {
+  &__logo {
+    position: relative;
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-family: $avenir-heavy;
+    font-size: 14px;
+    font-weight: 800;
+    z-index: 2;
+
+    &::before {
+      position: absolute;
+      top: -3px;
+      left: -23px;
+      content: " ";
+      width: 40px;
+      height: 40px;
+      border: 1px solid $bordercolorlogo1;
+      z-index: 1;
+    }
+
+    &::after {
+      position: absolute;
+      content: " ";
+      top: 3px;
+      left: -9px;
+      width: 28px;
+      height: 28px;
+      border: 2px solid $bordercolorlogo2;
+      transform: rotate(45deg);
+      z-index: 1;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 9em;
+  }
+}

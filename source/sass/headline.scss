@@ -1,0 +1,20 @@
+.headline {
+  margin-bottom: 210px;
+  text-align: center;
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    max-width: 900px;
+    color: $textcolorblack;
+    font-family: $playfair-regular;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 100px;
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 590px;
+  }
+}

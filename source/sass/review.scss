@@ -1,0 +1,33 @@
+.review {
+  position: relative;
+  border-bottom: 1px solid $bordercolorreview;
+
+  &::before {
+    position: absolute;
+    top: 25px;
+    left: -24px;
+    content: "\201C";
+    color: $bordercolorreview;
+    font-family: "Times New Roman", "Times", serif;
+    font-size: 100px;
+    z-index: 0;
+  }
+
+  & p {
+    position: relative;
+    font-family: $avenir-book;
+    font-weight: 300;
+    z-index: 1;
+  }
+
+  & figcaption {
+    text-transform: capitalize;
+    color: $textcolorblack;
+    font-family: $avenir-heavy;
+
+    &::before {
+      content: "-";
+      margin-right: 10px;
+    }
+  }
+}
