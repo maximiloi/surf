@@ -1,0 +1,19 @@
+.footer {
+  border-top: 1px solid #000;
+
+  &__title {
+    margin-top: 50px;
+    max-width: 1440px;
+    padding: 0 20px;
+    color: $textcolorblack;
+    font-family: $playfair-regular;
+    font-size: 24px;
+  }
+
+  &__copyright {
+    max-width: 1440px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
