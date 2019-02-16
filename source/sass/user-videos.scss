@@ -1,0 +1,34 @@
+.user-videos {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 280px;
+  color: $textcolorblack;
+
+  &__title {
+    font-family: $playfair-regular;
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 100px;
+  }
+}
+
+.user-video {
+  position: relative;
+  margin-bottom: 50px;
+
+  & img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 56px;
+    height: 56px;
+  }
+}

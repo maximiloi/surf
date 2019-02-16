@@ -1,0 +1,35 @@
+.popular-instractors {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: $textcolorblack;
+
+  &__title {
+    font-family: $playfair-regular;
+    text-transform: capitalize;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+  }
+}
+
+.instractor {
+  &__list {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__name {
+    font-family: $playfair-regular;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 87px;
+  }
+
+  &__students {
+    color: $textcolorgreen;
+    font-family: $avenir-medium;
+    font-size: 15px;
+    line-height: 87px;
+  }
+}

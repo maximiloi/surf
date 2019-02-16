@@ -1,0 +1,13 @@
+.blog {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: $textcolorblack;
+
+  &__title {
+    text-align: center;
+    font-family: $playfair-regular;
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 100px;
+  }
+}

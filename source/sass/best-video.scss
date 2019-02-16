@@ -1,0 +1,32 @@
+.best-video {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  max-width: 1440px;
+
+  &__post {
+    position: relative;
+    @media (min-width: 768px) {
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      bottom: 32px;
+      left: 25px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      width: 56px;
+      height: 56px;
+    }
+
+    & img {
+      width: 100vw;
+
+      @media (min-width: 768px) {
+        width: 620px;
+      }
+    }
+  }
+}

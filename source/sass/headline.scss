@@ -4,7 +4,7 @@
 
   &__title {
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     max-width: 900px;
     color: $textcolorblack;
     font-family: $playfair-regular;
@@ -16,5 +16,13 @@
   &__text {
     margin: 0 auto;
     max-width: 590px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headline {
+    &__title {
+      margin-bottom: 100px;
+    }
   }
 }
