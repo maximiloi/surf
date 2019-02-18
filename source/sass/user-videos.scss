@@ -3,6 +3,7 @@
   padding: 0 20px;
   margin: 0 auto;
   margin-bottom: 100px;
+  text-align: center;
   color: $textcolorblack;
 
   &__title {
@@ -13,23 +14,3 @@
   }
 }
 
-.user-video {
-  position: relative;
-  margin-bottom: 50px;
-
-  & img {
-    position: relative;
-    overflow: hidden;
-  }
-
-  &::after {
-    content: " ";
-    position: absolute;
-    bottom: -10px;
-    left: -10px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    width: 56px;
-    height: 56px;
-  }
-}

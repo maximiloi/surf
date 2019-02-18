@@ -1,0 +1,22 @@
+.player {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  &__button {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: $bgcolorwhite;
+    width: 56px;
+    height: 56px;
+
+    &--best {
+      bottom: 32px;
+      left: 25px;
+    }
+  }
+}

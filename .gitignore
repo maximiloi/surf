@@ -4,6 +4,7 @@
 *.log
 *.pdf
 *.psd
+*.mp4
 *.icloud
 *.sublime*
 build/
