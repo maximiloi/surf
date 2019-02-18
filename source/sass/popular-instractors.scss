@@ -13,6 +13,14 @@
 }
 
 .instractor {
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
   &__list {
     width: 280px;
     margin: 0 auto;
@@ -23,13 +31,13 @@
     font-family: $playfair-regular;
     text-transform: capitalize;
     font-size: 30px;
-    line-height: 87px;
+    line-height: 31px;
   }
 
   &__students {
     color: $textcolorgreen;
     font-family: $avenir-medium;
     font-size: 15px;
-    line-height: 87px;
+    line-height: 16px;
   }
 }
