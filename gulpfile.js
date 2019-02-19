@@ -8,6 +8,9 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
 var csso = require('gulp-csso');
+var svgstore = require("gulp-svgstore"); // sprite
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var rename = require("gulp-rename");
 
 
@@ -18,10 +21,10 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"));
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("sprite", function () {
@@ -75,6 +78,6 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  "sprite",
+  //"sprite",
   "html"
 ));
