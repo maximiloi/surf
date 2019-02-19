@@ -44,3 +44,12 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .header {
+    &__wrapper {
+      margin-top: 100px;
+      margin-bottom: 180px;
+    }
+  }
+}

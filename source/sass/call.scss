@@ -8,17 +8,23 @@
   &__title {
     margin-bottom: 50px;
     font-family: $playfair-regular;
-    text-transform: capitalize;
     font-size: 50px;
     line-height: 100px;
   }
 
   &__enroll-now {
     color: $textcolorblack;
-    height: 31px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 31px;
-    padding: 25px 30px 15px 30px;
+    padding: 15px 45px 10px 45px;
     border-color: $bordercolorreadmy;
+  }
+}
+
+@media (min-width: 992px) {
+  .call {
+    &__title {
+      margin-bottom: 65px;
+    }
   }
 }

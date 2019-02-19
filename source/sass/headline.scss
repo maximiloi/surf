@@ -28,3 +28,13 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .headline {
+    margin-bottom: 200px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}

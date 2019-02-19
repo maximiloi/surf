@@ -10,9 +10,16 @@
     bottom: -10px;
     left: -10px;
     border-radius: 50%;
+    border-color: $bgcolorwhite;
     background-color: $bgcolorwhite;
     width: 56px;
     height: 56px;
+
+    & i {
+      padding-top: 11px;
+      font-size: 12px;
+      color: $textcolorblack;
+    }
 
     &--best {
       bottom: 32px;

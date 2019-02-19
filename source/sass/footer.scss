@@ -2,8 +2,10 @@
   border-top: 1px solid $footercolorline;
 
   &__title {
+    margin: 0 auto;
     margin-top: 50px;
-    max-width: 1440px;
+    margin-bottom: 20px;
+    max-width: 1200px;
     padding: 0 20px;
     color: $textcolorblack;
     font-family: $playfair-regular;
@@ -11,7 +13,8 @@
   }
 
   &__copyright {
-    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 0 20px;
     font-size: 14px;
     line-height: 28px;

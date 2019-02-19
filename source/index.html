@@ -8,6 +8,10 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+"
+    crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.css">
   <title>Long Beach Surfing Institute</title>
@@ -17,7 +21,7 @@
 
   <header>
     <div class="header__wrapper">
-      <nav class="navbar navbar-expand-sm navbar-light bg-white container-fluid align-items-center justify-content-sm-between">
+      <nav class="navbar navbar-expand-sm navbar-expand-lg navbar-light bg-white container-fluid align-items-center justify-content-sm-between text-uppercase">
         <a class="navbar-brand header__logo" href="/">A</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
           aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +54,7 @@
 
   <main class="page__wrapper">
 
-    <div class="intro">
+    <div class="intro d-xl-flex justify-content-xl-between">
       <article class="recent-reviews">
         <h3 class="recent-reviews__title">recent reviews</h3>
         <div class="review__wrapper d-md-flex d-lg-block">
@@ -71,24 +75,24 @@
         <figure class="best-video__post player player--best">
           <img src="/img/best-video.jpg" alt="">
           <button type="button" class="btn btn-primary player__button player__button--best" data-toggle="button"
-            aria-pressed="false" autocomplete="off"></button>
+            aria-pressed="false" autocomplete="off"><i class="fa fa-play" aria-hidden="true"></i></button>
         </figure>
       </article>
 
       <article class="user-videos">
         <h3 class="user-videos__title">User Videos</h3>
-        <div class="user-video__wrapper d-md-flex d-lg-block">
+        <div class="user-video__wrapper d-md-flex d-xl-block">
           <figure class="user-video player">
             <!-- <video class="player__video" src="/video/Surfer.mp4"></video> -->
             <img class="player__video" src="/img/video1.jpg" alt="">
             <button type="button" class="btn btn-primary player__button" data-toggle="button" aria-pressed="false"
-              autocomplete="off"></button>
+              autocomplete="off"><i class="fa fa-play" aria-hidden="true"></i></button>
           </figure>
 
           <figure class="user-video player">
             <img src="/img/video2.jpg" alt="">
             <button type="button" class="btn btn-primary player__button" data-toggle="button" aria-pressed="false"
-              autocomplete="off"></button>
+              autocomplete="off"><i class="fa fa-play" aria-hidden="true"></i></button>
           </figure>
         </div>
       </article>
@@ -120,7 +124,7 @@
     <section class="blog">
       <h2 class="blog__title">Recent Blogs by User</h2>
       <article class="blog__list">
-        <figure class="blog__item">
+        <figure class="blog__item d-lg-flex align-items-lg-center justify-content-lg-between">
           <img class="blog__img" src="/img/blog1.jpg" alt="">
           <div class="blog__wrapper">
             <h3 class="blog__headline">Lipsum cound be headline</h3>
@@ -130,7 +134,7 @@
           </div>
         </figure>
 
-        <figure class="blog__item">
+        <figure class="blog__item d-lg-flex align-items-lg-center justify-content-lg-between">
           <img class="blog__img" src="/img/blog2.jpg" alt="">
           <div class="blog__wrapper">
             <h3 class="blog__headline">Lipsum cound be headline</h3>
@@ -144,7 +148,11 @@
 
     <section class="call">
       <h2 class="call__title">Aren’t you intrested Yet!!</h2>
-      <a href="#" class="call__enroll-now border">Enroll Now</a>
+
+
+      <button type="button" class="btn btn-outline-secondary call__enroll-now border" data-toggle="modal" data-target="#exampleModalCenter">
+        Enroll Now
+      </button>
     </section>
   </main>
 
@@ -152,6 +160,42 @@
     <h2 class="footer__title">Beach Surfing</h2>
     <p class="footer__copyright">Copyright © 2018-2019 All Rights Reserved.</p>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Get into contact with me</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

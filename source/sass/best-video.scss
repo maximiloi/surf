@@ -12,3 +12,11 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .best-video {
+    max-width: 620px;
+    padding: 0;
+    margin: 0;
+  }
+}

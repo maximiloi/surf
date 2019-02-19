@@ -47,9 +47,28 @@
     &__img {
       width: 95%;
     }
+
     &__list {
       margin: 0 auto;
       max-width: 1060px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .popular-instractors {
+    margin-top: 120px;
+    margin-bottom: 170px;
+
+    &__title {
+      margin-bottom: 65px;
+    }
+  }
+
+  .instractor {
+    &__img {
+      width: 100%;
+      margin-bottom: 35px;
     }
   }
 }
