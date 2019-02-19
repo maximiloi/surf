@@ -8,6 +8,7 @@
 *.icloud
 *.sublime*
 build/
+psd/
 node_modules/
 npm-debug.*
 source/css/*.css

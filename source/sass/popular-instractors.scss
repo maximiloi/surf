@@ -22,7 +22,7 @@
   }
 
   &__list {
-    width: 280px;
+    max-width: 280px;
     margin: 0 auto;
     text-align: center;
   }
@@ -39,5 +39,17 @@
     font-family: $avenir-medium;
     font-size: 15px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .instractor {
+    &__img {
+      width: 95%;
+    }
+    &__list {
+      margin: 0 auto;
+      max-width: 1060px;
+    }
   }
 }

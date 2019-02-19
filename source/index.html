@@ -53,20 +53,22 @@
     <div class="intro">
       <article class="recent-reviews">
         <h3 class="recent-reviews__title">recent reviews</h3>
-        <figure class="review">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis tempore quasi quos et!</p>
-          <figcaption>Steve Woz</figcaption>
-        </figure>
-        <figure class="review">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quam consequatur rerum. Perferendis,
-            laudantium?</p>
-          <figcaption>David Collum</figcaption>
-        </figure>
+        <div class="review__wrapper d-md-flex d-lg-block">
+          <figure class="review mx-md-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis tempore quasi quos et!</p>
+            <figcaption>Steve Woz</figcaption>
+          </figure>
+          <figure class="review mx-md-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quam consequatur rerum. Perferendis,
+              laudantium?</p>
+            <figcaption>David Collum</figcaption>
+          </figure>
+        </div>
       </article>
 
       <article class="best-video">
         <h3 class="best-video__title visually-hidden">Best video</h3>
-        <figure class="best-video__post player">
+        <figure class="best-video__post player player--best">
           <img src="/img/best-video.jpg" alt="">
           <button type="button" class="btn btn-primary player__button player__button--best" data-toggle="button"
             aria-pressed="false" autocomplete="off"></button>
@@ -75,43 +77,44 @@
 
       <article class="user-videos">
         <h3 class="user-videos__title">User Videos</h3>
-        <figure class="user-video player">
-          <!-- <video class="player__video" src="/video/Surfer.mp4"></video> -->
-          <img class="player__video" src="/img/video1.jpg" alt="">
-          <button type="button" class="btn btn-primary player__button" data-toggle="button" aria-pressed="false"
-            autocomplete="off"></button>
-        </figure>
+        <div class="user-video__wrapper d-md-flex d-lg-block">
+          <figure class="user-video player">
+            <!-- <video class="player__video" src="/video/Surfer.mp4"></video> -->
+            <img class="player__video" src="/img/video1.jpg" alt="">
+            <button type="button" class="btn btn-primary player__button" data-toggle="button" aria-pressed="false"
+              autocomplete="off"></button>
+          </figure>
 
-        <figure class="user-video player">
-          <img src="/img/video2.jpg" alt="">
-          <button type="button" class="btn btn-primary player__button" data-toggle="button" aria-pressed="false"
-            autocomplete="off"></button>
-        </figure>
+          <figure class="user-video player">
+            <img src="/img/video2.jpg" alt="">
+            <button type="button" class="btn btn-primary player__button" data-toggle="button" aria-pressed="false"
+              autocomplete="off"></button>
+          </figure>
+        </div>
       </article>
     </div>
 
     <section class="popular-instractors">
       <h2 class="popular-instractors__title">popular instractors</h2>
-      <article class="instractor__list">
-        <h3 class="instractor__title visually-hidden">instractors</h3>
-        <figure class="instractor__item">
+      <div class="instractor__list d-md-flex justify-content-md-between">
+        <figure class="instractor__item p-md-1">
           <img class="instractor__img" src="/img/simon.jpg" alt="">
           <p class="instractor__name">Simon Adward</p>
           <figcaption class="instractor__students">5,000 students</figcaption>
         </figure>
 
-        <figure class="instractor__item">
+        <figure class="instractor__item p-md-1">
           <img class="instractor__img" src="/img/elliana.jpg" alt="">
           <p class="instractor__name">Elliana D’Soza</p>
           <figcaption class="instractor__students">4,350 students</figcaption>
         </figure>
 
-        <figure class="instractor__item">
+        <figure class="instractor__item p-md-1">
           <img class="instractor__img" src="/img/joseph.jpg" alt="">
           <p class="instractor__name">Joseph Bardon</p>
           <figcaption class="instractor__students">3,248 students</figcaption>
         </figure>
-      </article>
+      </div>
     </section>
 
     <section class="blog">
